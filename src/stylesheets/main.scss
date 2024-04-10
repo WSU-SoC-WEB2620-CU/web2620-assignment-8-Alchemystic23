@@ -1,1 +1,124 @@
-// Your styles go here
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+
+$primary: #3c0169;
+$secondary: #000000;
+$danger: #9e9e9e;
+$success: white;
+
+
+@import "bootstrap/scss/bootstrap";
+
+* { 
+    border-radius: 0 !important;
+}
+
+.main_container{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.gradient-container {
+    background: linear-gradient(60deg, $primary, white);
+}
+
+.card-box {
+    padding: 100px;
+}
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 2fr 1fr 1fr 2fr;
+    gap: .5rem;
+    margin: 0rem;
+
+    grid-template-areas: 
+    "head head img1 img1 img2 img3 img3 img4"
+    "img5 img6 img1 img1 img7 img7 img7 img7"
+    "img5 img6 img8 img8 img7 img7 img7 img7"
+    "img10 img10 img8 img8 img9 img9 img11 img11"
+    "img12 img12 img12 img13 img13 img13 img13 img13";
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    grid-area: head;
+}
+
+.img1 {
+    grid-area: img1;
+}
+  
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.box {
+    padding: 50x;
+    margin-right: 10px;
+  }
+
+  
+.my-5 {
+    padding-top: ($spacer * 5)!important;
+    padding-bottom: ($spacer * 10) !important;
+}
+
+.nav-link{
+    font-size: 12px;
+}

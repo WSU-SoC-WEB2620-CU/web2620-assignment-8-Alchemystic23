@@ -3,14 +3,510 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project Starter</title>
+  <title>A08: Bootstrap</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
+
+  <script type="module" src="./javascripts/main.js"></script>
+
+  <!-- nav start -->
+    <nav class="navbar">
+      <div class="container-fluid"> <!-- container-fluid = span width of viewport -->
+        <a class="navbar-brand text-primary" href="#">
+          <i class="fab fa-bootstrap d-inline-block align-text w-70 h-70"></i>
+          Alex Powell
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link m-1" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="#plans">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav end -->
+  
+
+    <!-- jumbotron-area start -->
+    <div class="container-fluid gradient-container py-5 mb-5" id="jumbotron-area"> <!-- padding 5, margin-bottom 5 -->
+      <div class="content">
+        <h1 class="h1 text-success p-2">A bootstrap demo</h1>
+        <p class="lead text-success p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, modi? Quae est similique, soluta eligendi velit consequatur incidunt ipsam laudantium delectus, aut alias aperiam tempore nulla eaque fuga, numquam pariatur?</p>
+        <div class="container-fluid btn-container text-center">
+          <button type="button" class="btn btn-info m-1">Click here to see more</button> <!-- large button + color-->
+          <button type="button" class="btn btn-warning m-1">Click here to see a demo</button>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron-area end -->
+
+<div class="main_container">
+  
+    <div class="container mt-5 mb-3" id="features">
+      <div class="h1 text-center text-primary">Features</div>
+      <p class="lead text-secondary text-center mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quam corrupti adipisci sit aliquam debitis veniam perspiciatis dolores nobis, numquam doloremque vero nesciunt eveniet, excepturi temporibus distinctio delectus laborum reprehenderit.</p>
+
+
+      <!-- start row cards -->
+      <div class="row mt-5 mb-5">
+  
+        <!-- card 1 -->
+        <div class="col">
+          <div class="card">
+              <div class="card-box bg-primary"></div>
+
+              <div class="card" aria-hidden="true">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card">
+              <div class="card-box bg-primary"></div>
+
+              <div class="card" aria-hidden="true">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card">
+              <div class="card-box bg-primary"></div>
+
+              <div class="card" aria-hidden="true">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      
+      </div> <!-- end row cards -->
+    </div> <!-- end features-->
+
+
+    <!-- Start plans-->
+    <div class="container mt-5 mb-5" id="plans">
+
+      <div class="d-flex flex-row">
+        <div class="col-4 p-5 pt-0">
+          <div class="h1 text-primary text-center mb-5">Plans</div>
+          <p class="lead text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quam repellendus, doloribus ducimus error vero neque tempora laudantium, optio commodi, quas distinctio deleniti iure magni eum totam voluptate libero quo?</p>
+        </div>
+
+        <div class="col">
+          <table class="table">
+            <thead class="border-2 border-primary border-start-0 border-end-0">
+              <tr>
+                <th scope="col">Features</th>
+                <th class="text-center col-md-3" scope="col">Free</th>
+                <th class="bg-primary text-success text-center col-md-3" scope="col">Pro</th>
+                <th class="text-center col-md-3" scope="col">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td> Lorem ipsum dolor</td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+              
+              <tr>
+                <td> Sit amet consectetur</td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Adipisicing elit atque</td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Nemo rerum esse tempore</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+              
+              <tr>
+                <td> Quasi nesciunt commodi</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Odit in nihil labore</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center"><i class="fas fa-check-circle"></i></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Cupiditate id debitis</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center text-center"></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Aperiam quia quae cum</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center"></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+              <tr>
+                <td> Eligendi blanditis</td>
+                <td class="text-center text-primary"><i class="fas fa-times-circle"></i></td>
+                <td class="bg-primary text-success text-center"></td>
+                <td class="text-center text-primary"><i class="fas fa-check-circle"></i></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- end plans-->
+
+
+    <!-- start pricing cards-->
+    <div class="container text-center mt-5 mb-5" id="pricing">
+      <div class="h1 text-primary">Pricing</div>
+      <p class="lead text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dicta
+        corporis, explicabo maiores sequi non est. Provident aliquid soluta, officiis id iure voluptatem itaque sed magnam
+        reiciendis!</p>
+
+      <div class="row">
+
+        <!-- card 1-->
+        <div class="col mt-3">
+          <div class="card border-primary">
+            <h5 class="card-header">Free</h5>
+
+            <div class="card-body">
+
+              <h2 class="card-title mx-auto my-5">$0/mo</h2>
+              
+              <button type="button" class="btn btn-outline-primary w-100">Sign up for free</button>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item mt-3">10 users included</li>
+                <li class="list-group-item">2 GB of storage</li>
+                <li class="list-group-item">Email support</li>
+                <li class="list-group-item mb-3">Help center access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card 2-->
+        <div class="col mt-3">
+          <div class="card border-secondary">
+            <h5 class="card-header bg-secondary  text-success">Pro</h5>
+
+            <div class="card-body">
+
+              <h2 class="card-title  mx-auto my-5">$15/mo</h2>
+
+              <button type="button" class="btn btn-secondary w-100">Get Started</button>
+              <ul class="list-group list-group-flush">        
+                <li class="list-group-item mt-3">20 users included</li>
+                <li class="list-group-item">10 GB of storage</li>
+                <li class="list-group-item">Email support</li>
+                <li class="list-group-item mb-3">Help center access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card 3-->
+        <div class="col mt-3">
+          <div class="card border-primary ">
+            <h5 class="card-header bg-primary text-success">Enterprise</h5>
+
+            <div class="card-body">
+
+              <h2 class="card-title  mx-auto my-5">$29/mo</h2>
+
+              <button type="button" class="btn btn-primary w-100">Contact Us</button>
+              <ul class="list-group list-group-flush ">
+                <li class="list-group-item  list-group-item-primary mt-3">30 users included</li>
+                <li class="list-group-item list-group-item-primary">20 GB of storage</li>
+                <li class="list-group-item list-group-item-primary">Priority email support</li>
+                <li class="list-group-item mb-3">Help center access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>  <!-- end pricing cards-->
+
+
+    <!-- Start Gallery-->
+    <div class="container-fluid mt-5 mb-5" id="gallery">
+      
+      <div class="h1 text-primary text-center gallery pt-3 pb-5 mb-5">Gallery</div>
+      <div class="img1"><img src="images/img6.jpg" alt="diving"></div>
+      <div class="img2"><img src="images/img1.jpg" alt="diving"></div>
+      <div class="img3"><img src="images/img2.jpg" alt="diving"></div>
+      <div class="img4"><img src="images/img3.jpg" alt="diving"></div>
+      <div class="img5"><img src="images/img5.jpg" alt="diving"></div>
+      <div class="img6"><img src="images/img2.jpg" alt="diving"></div>
+      <div class="img7"><img src="images/img3.jpg" alt="diving"></div>
+      <div class="img8"><img src="images/img5.jpg" alt="diving"></div>
+      <div class="img9"><img src="images/img2.jpg" alt="diving"></div>
+      <div class="img10"><img src="images/img1.jpg" alt="diving"></div>
+      <div class="img11"><img src="images/img6.jpg" alt="diving"></div>
+      <div class="img12"><img src="images/img4.jpg" alt="diving"></div>
+      <div class="img13"><img src="images/img7.jpg" alt="diving"></div>
+  
+  
+    </div>
+
+<!-- Start Top Project-->
+<div class="container" id="projects">
+    <div class="h1 text-center text-primary mb-3">Top projects</div>
+      <p class="lead text-center text-secondary mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo impedit provident voluptatum sed explicabo, mollitia aliquam facere sit obcaecati corrupti! Corporis quasi ullam at unde eveniet aspernatur iusto maxime quibusdam!</p>
+    
+    <div class="container mb-5">
+
+      <!-- row 1-->
+      <div class="row mb-4">
+
+        <div class="col-6">
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-6">
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>    
+      </div>
+
+      <!-- row 2-->
+      <div class="row mb-4">
+
+        <div class="col-6">
+            <div class="card-body">
+              
+              <div class="row">
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>  
+      </div>
+
+      <!-- row 3-->
+      <div class="row mb-1">
+
+        <div class="col-6">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-3">
+                  <div class="box bg-primary h-100"></div>
+                </div>
+
+                <div class="col-9">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus vel tenetur dictacorporis!</p>
+                </div> 
+
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</div> <!-- end top project -->
+
+</div> <!-- end main container-->
+
+
+<footer class="footer bg-dark text-success py-3">
+  <div class="container">
+    
+    <div class="row mt-3">
+
+      <div class="col-3 d-flex flex-column align-items-center">
+          <i class="fab fa-bootstrap d-inline-block align-text me-1 text-primary w-50 h-75"></i>
+        <p class="text-danger">&copy; 2024</p>
+      </div>
+
+      <div class="col-3">
+        <h5>Features</h5>
+        <ul class="list-unstyled">
+          <li class="text-danger">Cool stuff</li>
+          <li class="text-danger">Random feature</li>
+          <li class="text-danger">Team feature</li>
+          <li class="text-danger">Stuff for developers</li>
+          <li class="text-danger">Another one</li>
+          <li class="text-danger">Last time</li>
+        </ul>
+    </div>
+
+    <div class="col-3">
+      <h5>Resources</h5>
+      <ul class="list-unstyled">
+        <li class="text-danger">Resource</li>
+        <li class="text-danger">Resource name</li>
+        <li class="text-danger">Another resource</li>
+        <li class="text-danger">Final resource</li>
+      </ul>
+    </div>
+
+    <div class="col-3">
+      <h5>About</h5>
+      <ul class="list-unstyled">
+        <li class="text-danger">Team</li>
+        <li class="text-danger">Locations</li>
+        <li class="text-danger">Privacy</li>
+        <li class="text-danger">Terms</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+</footer>
 </body>
 </html>
